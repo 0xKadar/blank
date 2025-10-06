@@ -1,0 +1,153 @@
+:root {
+  --gray-900: #18181b;
+  --gray-700: #374151;
+  --gray-500: #6b7280;
+  --gray-400: #9ca3af;
+  --max-width: 48rem;
+  --font-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: #fff;
+  color: var(--gray-900);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1rem 0 1rem;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.name-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.015em;
+  display: flex;
+  align-items: baseline;
+  gap: 0.65em;
+}
+
+.asterisk {
+  color: var(--gray-400);
+  font-weight: 500;
+  font-size: 1.3em;
+  font-family: monospace;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.5em;
+  list-style: disc outside none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15em;
+}
+
+.list li {
+  font-size: 1.05rem;
+  color: var(--gray-900);
+  line-height: 1.7;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.meta {
+  color: var(--gray-500);
+  font-size: 0.98em;
+  margin-left: 0.5em;
+}
+
+.icon {
+  font-size: 0.9em;
+  color: var(--gray-400);
+  margin-right: 0.3em;
+  vertical-align: middle;
+}
+
+a {
+  color: var(--gray-900);
+  text-underline-offset: 3px;
+  text-decoration: underline;
+  text-decoration-color: var(--gray-400);
+  transition: text-decoration-color 0.18s, color 0.18s;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover, a:focus {
+  color: var(--gray-700);
+  text-decoration-color: var(--gray-700);
+  outline: none;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.social-links {
+  font-size: 1.05rem;
+  color: var(--gray-700);
+  letter-spacing: 0.07em;
+  display: inline-flex;
+  gap: 0.75em;
+  align-items: center;
+  margin-bottom: 0.7em;
+}
+
+.sep {
+  color: var(--gray-400);
+  padding: 0 0.7em;
+  font-size: 1.2em;
+  user-select: none;
+}
+
+.footer-tagline {
+  font-size: 1.1rem;
+  color: var(--gray-500);
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem 0.5rem 0 0.5rem;
+  }
+  .name-title {
+    font-size: 1.35rem;
+  }
+  .section-title {
+    font-size: 1.08rem;
+  }
+}
